@@ -1,0 +1,52 @@
+Configuring API server --> https://github.com/typicode/json-server
+
+Getting started --> Install JSON Server
+
+1 - Go to your terminal and do ---> npm install -g json-server
+
+2 - create a text file, name the text file --> db.json
+
+3 - copy and paste the below in the the json file and save it
+
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "automation",
+      "author": "John"
+    },
+    {
+      "id": "2",
+      "title": "dummyTitle",
+      "auther": "Max"
+    },
+    {
+      "id": "3",
+      "title": "automation",
+      "author": "John"
+    },
+    {
+      "id": "4",
+      "title": "Science",
+      "author": "Mike"
+    },
+    {
+      "id": "5",
+      "title": "Engineering",
+      "author": "Philips"
+    },
+    {
+      "id": "6",
+      "title": "Science",
+      "author": "Mike"
+    }
+  ]
+}
+
+4 - Go to the root folder where you save db.json and start the server -->  json-server --watch db.json
+
+5 - Your application should now be up and running - -> http://localhost:3000/posts
+
+To run all the test
+* mvn test -Dtest=TestRunner
+
